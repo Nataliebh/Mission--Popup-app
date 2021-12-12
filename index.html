@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop UP - B144</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="btn-wrapper">
+        <button class="btn clickHere">Click here</button>
+    </div>
+    <div class="container">
+        <!-- form header -->
+        <div class="form-header">
+            <h2>דירוג העסק</h2>
+            <div class="close-wrapper">
+                <span class="popup-close">X</span>
+            </div>
+        </div>
+
+        <!-- Form Main -->
+        <div class="form-main">
+            <div class="main-headig">
+                <span id="heading-question" class="heading">עד כמה היית מרוצה מהעסק?</span>
+            </div>
+            <div class="questions-wrapper">
+                <div class="question">
+                    <span>שירות מקצועי</span>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5_1" name="rating_1" value="5" /><label for="star5_1"
+                            title="5 stars"></label>
+                        <input type="radio" id="star4_1" name="rating_1" value="4" /><label for="star4_1"
+                            title="4 stars"></label>
+                        <input type="radio" id="star3_1" name="rating_1" value="3" /><label for="star3_1"
+                            title="3 stars"></label>
+                        <input type="radio" id="star2_1" name="rating_1" value="2" /><label for="star2_1"
+                            title="2 stars"></label>
+                        <input type="radio" id="star1_1" name="rating_1" value="1" /><label for="star1_1"
+                            title="1 star"></label>
+                    </fieldset>
+                </div>
+                <div class="question">
+                    <span>מחיר ממוצע</span>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5_2" name="rating_2" value="5" /><label for="star5_2"
+                            title="5 stars"></label>
+                        <input type="radio" id="star4_2" name="rating_2" value="4" /><label for="star4_2"
+                            title="4 stars"></label>
+                        <input type="radio" id="star3_2" name="rating_2" value="3" /><label for="star3_2"
+                            title="3 stars"></label>
+                        <input type="radio" id="star2_2" name="rating_2" value="2" /><label for="star2_2"
+                            title="2 stars"></label>
+                        <input type="radio" id="star1_2" name="rating_2" value="1" /><label for="star1_2"
+                            title="1 star"></label>
+                    </fieldset>
+                </div>
+                <div class="question">
+                    <span>מקצועיות הצוות</span>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5_3" name="rating_3" value="5" /><label for="star5_3"
+                            title="5 stars"></label>
+                        <input type="radio" id="star4_3" name="rating_3" value="4" /><label for="star4_3"
+                            title="4 stars"></label>
+                        <input type="radio" id="star3_3" name="rating_3" value="3" /><label for="star3_3"
+                            title="3 stars"></label>
+                        <input type="radio" id="star2_3" name="rating_3" value="2" /><label for="star2_3"
+                            title="2 stars"></label>
+                        <input type="radio" id="star1_3" name="rating_3" value="1" /><label for="star1_3"
+                            title="1 star"></label>
+                    </fieldset>
+                </div>
+                <div class="question">
+                    <span>זמינות בעל העסק</span>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5_4" name="rating_4" value="5" /><label for="star5_4"
+                            title="5 stars"></label>
+                        <input type="radio" id="star4_4" name="rating_4" value="4" /><label for="star4_4"
+                            title="4 stars"></label>
+                        <input type="radio" id="star3_4" name="rating_4" value="3" /><label for="star3_4"
+                            title="3 stars"></label>
+                        <input type="radio" id="star2_4" name="rating_4" value="2" /><label for="star2_4"
+                            title="2 stars"></label>
+                        <input type="radio" id="star1_4" name="rating_4" value="1" /><label for="star1_4"
+                            title="1 star"></label>
+                    </fieldset>
+                </div>
+                <div class="question">
+                    <span>התרשמות כללית</span>
+                    <fieldset class="rating">
+                        <input type="radio" id="star5_5" name="rating_5" value="5" /><label for="star5_5"
+                            title="5 stars"></label>
+                        <input type="radio" id="star4_5" name="rating_5" value="4" /><label for="star4_5"
+                            title="4 stars"></label>
+                        <input type="radio" id="star3_5" name="rating_5" value="3" /><label for="star3_5"
+                            title="3 stars"></label>
+                        <input type="radio" id="star2_5" name="rating_5" value="2" /><label for="star2_5"
+                            title="2 stars"></label>
+                        <input type="radio" id="star1_5" name="rating_5" value="1" /><label for="star1_5"
+                            title="1 star"></label>
+                    </fieldset>
+                </div>
+            </div>
+            <hr>
+            <!-- Form - user experience and FB -->
+            <div class="user-experience-wrapper">
+                <label for="customer-experience" id="customer-experience">כמה מילים על החוויה שלך עם העסק</label>
+                <textarea name="customer-experience" class="textarea" rows="4" maxlength="500"
+                    placeholder="יש להקליד כאן..."></textarea>
+
+                <hr>
+                <div class="img-upload-section">
+                    <img src="./img/default-pic.svg" alt="default image">
+                    <span>הוספת תמונות</span>
+                </div>
+                <hr>
+                <div class="facebook-section">
+                    <fb:login-button class="login-fb-btn" scope="public_profile,email" onlogin="checkLoginState();">
+                    </fb:login-button>
+                    <input type="text" class="user-name" placeholder="שם מלא">
+                </div>
+            </div>
+        </div>
+        <!-- Form Footer -->
+        <div class="form-footer">
+            <input type="checkbox" name="terms" id="terms">
+            <span>קראתי את
+                <a target=" _blank" href="https://www.b144.co.il/TermsOfService.aspx">תנאי השימוש</a>
+                והם מקובלים עלי
+            </span>
+            <div class="bottom-btns">
+                <input type="submit" value="שיתוף תגובה" id="submit" class="btn web">
+                <input type="submit" value="המשך" id="submit" class="btn mobile">
+                <div class="close-wrapper">
+                    <span class="popup-close">ביטול</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '244183551148502',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+    </script>
+    <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
